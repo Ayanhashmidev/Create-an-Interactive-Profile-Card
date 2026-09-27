@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Profile Card</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="profile-card">
+
+            <p class="small-title">MY PROFILE</p>
+
+            <h1 id="profileHeading">Welcome to My Profile</h1>
+
+            <img
+                id="profileImage"
+                src="https://i.pravatar.cc/300?img=12"
+                alt="Profile Image"
+                onmouseover="imageOver()"
+                onmouseout="imageOut()"
+            >
+
+            <h2 id="profileName">Ayan Hashmi</h2>
+
+            <h3 id="profileRole">Web Developer</h3>
+
+            <p id="profileDescription">
+                I am a passionate web developer who enjoys creating
+                modern and interactive websites using HTML, CSS and JavaScript.
+            </p>
+
+            <div class="buttons">
+
+                <button onclick="changeProfile()">
+                    Change Profile
+                </button>
+
+                <button onclick="changeImage()">
+                    Change Image
+                </button>
+
+            </div>
+
+            <div class="user-input">
+
+                <input
+                    type="text"
+                    id="userName"
+                    placeholder="Enter your name"
+                >
+
+                <button onclick="showName()">
+                    Add My Name
+                </button>
+
+            </div>
+
+            <p id="welcomeMessage"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
